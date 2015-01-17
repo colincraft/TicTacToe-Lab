@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<script src="app.js" ></script>
 	<style>
-	h1 {
+	h1, h2{
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 55px;
 	font-style: normal;
@@ -15,6 +15,9 @@
 	color: gray;
 	margin-bottom: 100px;
 }
+	h2{
+		font-size: 32px;
+	}
 	.box, .X, .O{
 		width: 100px;
 		height: 100px;
@@ -84,6 +87,7 @@
 	<div class = "box btmRight  btm"></div>
 	<div>
 	<button type = "button" id="reset">Resetti</button>
+	<h2 id="whosTurn"></h2>
 	</div>
 </div>
 </div
