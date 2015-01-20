@@ -1,0 +1,59 @@
+h1, h2{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 55px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	line-height: 26.3999996185303px;
+	color: gray;
+	margin-bottom: 100px;
+}
+	h2{
+		font-size: 32px;
+	}
+	.box, .X, .O{
+		width: 100px;
+		height: 100px;
+		background-color: white;
+		border: 2px solid gray;
+		display: inline-block;
+		margin: -4px
+	}
+	.container{
+		width: 1000px;
+		text-align: center;
+		margin: auto;
+	}
+	.row{
+/*		display: block;
+*/	}
+	.mid, .btm{	
+	}
+	button{
+		display: inline-block;
+	}
+	.X{
+		/*background-color: red;*/
+		background-image: url("assets/X-01.png");
+
+		/*change this to be some sort of X*/
+	}
+	.O{
+		/*background-color: yellow;*/
+		background-image: url("assets/O-02.png");
+		/*change this to being the style of X*/
+	}
+	#reset{
+		text-decoration: none;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 32px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 200;
+		line-height: 26.3999996185303px;
+		color: gray;
+		background-color: white;
+		border: none;
+		margin-top: 100px;
+
+	}

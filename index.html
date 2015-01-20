@@ -3,67 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="app.js" ></script>
+	<script src="app.js" async></script>
+	<link rel="stylesheet" type="text/css"href="style.css">
 	<style>
-	h1, h2{
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 55px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 200;
-	line-height: 26.3999996185303px;
-	color: gray;
-	margin-bottom: 100px;
-}
-	h2{
-		font-size: 32px;
-	}
-	.box, .X, .O{
-		width: 100px;
-		height: 100px;
-		background-color: white;
-		border: 2px solid gray;
-		display: inline-block;
-		margin: -4px
-	}
-	.container{
-		width: 1000px;
-		text-align: center;
-		margin: auto;
-	}
-	.row{
-/*		display: block;
-*/	}
-	.mid, .btm{	
-	}
-	button{
-		display: inline-block;
-	}
-	.X{
-		/*background-color: red;*/
-		background-image: url("assets/X-01.png");
-
-		/*change this to be some sort of X*/
-	}
-	.O{
-		/*background-color: yellow;*/
-		background-image: url("assets/O-02.png");
-		/*change this to being the style of X*/
-	}
-	#reset{
-		text-decoration: none;
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-size: 32px;
-		font-style: normal;
-		font-variant: normal;
-		font-weight: 200;
-		line-height: 26.3999996185303px;
-		color: gray;
-		background-color: white;
-		border: none;
-		margin-top: 100px;
-
-	}
 	</style>
 </head>
 <body>
@@ -71,25 +13,25 @@
 <div class="container">
 <h1>Let's Play Tic Tac Toe.</h1>
 <div class = "row">
-	<div class = "box upLeft "></div>
-	<div class  = "box upTop "></div>
-	<div class = "box upRight "></div>
+	<div class = "box" id="upLeft"></div>
+	<div class  = "box" id="upTop"></div>
+	<div class = "box" id="upRight"></div>
 
 </div>
 <div class ="row">
-	<div class = "box midLeft  mid"></div>
-	<div class = "box midMid  mid"></div>
-	<div class = "box midRight  mid"></div>
+	<div class = "box" id="midLeft"></div>
+	<div class = "box" id="midMid"></div>
+	<div class = "box" id="midRight"></div>
 </div>
 <div class = "row">
-	<div class ="box btmLeft  btm"></div>
-	<div class = "box btmMid  btm"></div>
-	<div class = "box btmRight  btm"></div>
+	<div class ="box" id="btmLeft"></div>
+	<div class ="box" id="btmMid"></div>
+	<div class ="box" id="btmRight"></div>
 	<div>
-	<button type = "button" id="reset">Resetti</button>
+	<button type ="button" id="reset">Resetti</button>
 	<h2 id="whosTurn"></h2>
 	</div>
 </div>
-</div
+</div>
 </body>
 </html>
